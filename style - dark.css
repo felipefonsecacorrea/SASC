@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body{
+   background-image: url(../img/background.png); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+
+.cabecalho {
+    width: 1400px auto;
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho img {
+    width: 70px;
+}
+
+main{
+    margin: 0 auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.esquerdinha{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagina_esquerda{
+    background: linear-gradient(114.61deg, rgba(255, 255, 255, 0.052) 1.08%, rgba(255, 255, 255, 0.117) 99.26%);
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 55%;
+    height: 80%;
+    justify-content: center;
+}
+
+h2{
+    margin: 20px;
+    color: green;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.texto{
+    text-align: center;
+    color: #8f8f8f;
+}
+
+.pagina_esquerda input{
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    background-color:#393939;
+    border: none;
+    height:40px;
+    width: 65%;
+    border-radius: 30px;
+}
+
+.pagina_esquerda a{
+    text-decoration: none;
+    color: #09905F;
+    font-size: 10px;
+    width: 50%;
+    text-align: right;
+    margin-top: 5%;
+    
+}
+
+.pagina_esquerda button{
+    cursor: pointer;
+    margin: 10%;
+    color: white;
+    background-color: 5;
+    border-radius: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid #CF4B83;
+    width: 35%;
+    height: 45px;
+    text-transform: uppercase;
+}
+
+.ladoDireito{
+    display: flex;
+    align-items:    end;
+
+}
+
+.pagina_direita{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.pagina_direita p{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -10%;
+}
+
+label {
+    margin-top: -2px;
+    position: relative ;
+    width: 120px ;
+    height: 70px;
+    cursor: pointer;
+}
+
+label input {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+label span {
+    position: absolute;
+    left: 70px;
+    width: 40px;
+    height: 23px;
+    background: green;
+    border-radius: 80px;
+    transition: 0,5s;
+}
+
+label input:checked ~ span{
+    background: #CF4B83;
+}
+label span i {
+    transition: 0,5s;
+    top: 3.8px;
+    left: 2px;
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+label input:checked ~ span i {
+    left: 18px;
+    background: #393939;
+}
+
+.pagina_direita img{
+    width: 85%;
+}
+
+@media screen and (max-width: 1180px) {
+    .pagina_direita p{
+       font-size: 30px;
+     }
+    }
+    
+@media screen and (max-width: 695px) {
+    .pagina_direita p{
+        font-size: 27px;
+        }
+    
+
+    .pagina_esquerda button {
+
+        font-size: 70%;
+    }
+
+    .ladoDireito{
+        margin-top: 28%;
+    }
+
+    .pagina_direita{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    body{
+        background-image: url(../img/background\ -\ Copia.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:  center;
+    }
+
+    main{
+        flex-direction: column;
+        display: flex;
+        margin: 0 auto;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .pagina_direita img{
+        width: 45%;
+    }
+
+}

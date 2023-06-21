@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+:root {
+    --branco: #f4f4f4;
+    --verde: #01b574;
+    --cinza: #8f8f8f;
+    --rosa: #cf4b83;
+    --verdeclaro: rgba(1, 181, 116, 0.1);
+  }  
+
+body{
+   background-image: url(../img/Background1.png); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+
+.cabecalho {
+    width: 1400px auto;
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho img {
+    width: 5%;
+}
+
+main{
+    margin: 0 auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.esquerdinha{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.pagina_esquerda{
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.356) 100%, rgba(255, 255, 255, 0.117) 10%);
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    height: 80%;
+    justify-content: center;
+    box-shadow: 2px 2px 70px rgb(0, 0, 0);
+}
+
+.return {
+    color: var(--cinza);
+    margin-top: 1%;
+    font-size: 200%;
+    width: 80%;
+    text-align: start;
+    text-decoration: none;
+  }
+  
+
+h2{
+    margin-bottom: 20px;
+    color: var(--verde);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.texto{
+    text-align: justify;
+    color: var(--verde);
+    margin-top: 1%;
+    width: 75%;
+}
+
+.pagina_esquerda input{
+    color: white;
+    text-align: center;
+    margin-top: 8%;
+    background-color:var(--verdeclaro);
+    border: none;
+    height:40px;
+    width: 65%;
+    border-radius: 30px;
+}
+
+.avancar{
+    width: 100%;
+}
+
+.pagina_esquerda button{
+    cursor: pointer;
+    margin: 10%;
+    color: white;
+    background-color: var(--verde);
+    border-radius: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid var(--verde);
+    width: 35%;
+    height: 45px;
+    text-transform: uppercase;
+}
+
+.ladoDireito{
+    display: flex;
+    align-items:    end;
+    width: 50%;
+}
+
+.pagina_direita{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.pagina_direita p{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -10%;
+    margin-bottom: 14%;
+}
+
+label {
+    margin-top: 5%;
+    position: relative ;
+    width: 120px ;
+    height: 70px;
+    cursor: pointer;
+}
+
+label input {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+label span {
+    position: absolute;
+    left: 70px;
+    width: 40px;
+    height: 23px;
+    background: green;
+    border-radius: 80px;
+    transition: 0,5s;
+}
+
+label input:checked ~ span{
+    background: #CF4B83;
+}
+label span i {
+    transition: 0,5s;
+    top: 3.8px;
+    left: 2px;
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+label input:checked ~ span i {
+    left: 18px;
+    background: #393939;
+}
+
+.pagina_direita img{
+    width: 55%;
+}
+
+@media screen and (max-width: 1180px) {
+    .cabecalho {
+        height: 58px;
+    }    
+
+    .pagina_direita p{
+       font-size: 30px;
+     }
+    }
+    
+@media screen and (max-width: 685px) {
+    .return{
+        margin-top: 0%;
+    }   
+
+    .esquerdinha{
+        width: 100%;
+    }
+
+    .ladoDireito{
+        width: 100%;
+    }
+
+    .pagina_direita p{
+        font-size: 35px;    
+        margin-top: 30%;
+    }
+    
+    .pagina_esquerda button {
+        font-size: 70%;
+        width: 45%;
+    }
+
+    .pagina_direita{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    body{
+        background-image: url(../img/Background1\ -\ Copia.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:  center;
+    }
+
+    main{
+        flex-direction: column;
+        display: flex;
+        margin: 0 auto;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .pagina_direita img{
+        width: 75%;
+    }
+
+    .cabecalho img {
+        width: 15%;
+    }
+ 
+    .texto{
+        font-size: smaller;
+    }
+
+
+}
+
+
+@media screen and (max-width: 684px) {
+    .cabecalho img {
+        width: 10%;
+    }
+ 
+}
+    
+    
+@media screen and (max-width: 850px) {
+    .return{
+        margin-top: 8%;
+    }
+ 
+}

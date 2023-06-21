@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-menu: #1F1F1F;
+    --verde: #01B574;
+    --branco: #F4F4F4;
+
+    --font1: 'Tajawal', sans-serif;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+label {
+    margin-top: 1.5%;
+    margin-right: 3%;
+    position: relative ;
+    width: 120px ;
+    height: 70px;
+    cursor: pointer;
+}
+
+label input {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+label span {
+    position: absolute;
+    left: 70px;
+    width: 40px;
+    height: 23px;
+    background: green;
+    border-radius: 80px;
+    transition: 0,5s;
+}
+
+label input:checked ~ span{
+    background: #CF4B83;
+}
+label span i {
+    transition: 0,5s;
+    top: 3.8px;
+    left: 2px;
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+label input:checked ~ span i {
+    left: 18px;
+    background: #393939;
+}
+
+main{
+    display: flex;
+    background-color: rgb(209, 209, 209);
+    width: 100%;
+}
+
+.menu{
+    width: 15%;
+}
+
+.menu_lateral{
+    background-color: var(--background-menu);
+    padding: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.btn_expandir{
+    width: 100%;
+    padding-left: 10%;
+    color: var(--branco);
+
+    cursor: pointer;
+    font-family: var(--font1);
+}
+
+.menu_conteudo{
+    padding-top: 30%;
+}
+
+ul{
+    width: 100%;
+    list-style-type: none;
+    font-family: var(--font1);
+}
+
+li a{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.item_menu a{
+    color: var(--branco);
+    text-decoration: none;
+
+    padding-left: 8%;
+}
+
+.primeiros_itens, .segundos_itens, .terceiros_itens{
+    margin-bottom: 40%;
+
+}
+
+.txt_link{
+    margin-left: 2%;
+    position: fixed;
+}
+
+hr{
+    width: 90%;
+}
+
+.btn_equipamentos{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--verde);
+    width: 80%;
+    margin-left: 5%;
+}
+
+.espaco2{
+    margin-top: 10%;
+    
+}
+
+.equipamentos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.painelEqpm{
+    width: 95%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.buscarInput{
+    border-radius: 8px;
+    background-color: #DCEEE8;
+    border: none;
+    width: 18%;
+    height: 4vh;
+    margin-left: 5%;
+    margin-top: 2%;
+    color: black;
+}
+
+.menu2Bbtn a{
+    text-decoration: none;
+}
+
+.btnNovoEqpm button{
+    border-radius: 8px;
+    background-color: #CF4B83;
+    color: #1F1F1F;
+    border: none;
+    width: 12%;
+    height: 3.5vh;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-weight: 600;    
+}
+
+.btnEditar button{
+    border-radius: 8px;
+    background-color: #DCEEE8;
+    color:  rgb(95, 95, 95);
+    border: none;
+    width: 8%;
+    height: 2.8vh;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.btnExcluir button{
+    border-radius: 8px;
+    background-color: #DCEEE8;
+    color:  rgb(95, 95, 95);
+    border: none;
+    width: 8%;
+    height: 2.8vh;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.tabelaEqpm {
+    margin-top: 5%;
+    margin-left: 5%;
+    border: none;
+    font-size: 100%;
+    min-width: 90%;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.tabelaEqpm th{
+    border-radius: 25px 25px 25px 0px;
+}
+  
+.tabelaEqpm thead tr {
+background-color: #DCEEE8;
+color: black;
+text-align: center;
+font-weight: bold;
+}
+
+.tabelaEqpm th,
+.tabelaEqpm td {
+padding: 1% 2.5%;
+}
+
+.size1{
+    font-size: 90%;
+}
+
+.size2{
+    font-size: 150%;
+}
+  
+@media screen and (max-width: 1350px) {
+    .menu2Bbtn button{
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .size1{
+        font-size: 65%;
+    }   
+    
+    .size2{
+        font-size: 100%;
+    }
+
+    .tabelaEqpm{
+        font-size: 55%;
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    .size1{
+        font-size: 55%;
+    }   
+    
+    .size2{
+        font-size: 80%;
+    }
+
+}
